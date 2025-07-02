@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetiva - Arquitetura Sofisticada</title>
+  <meta name="description" content="Projetiva é um estúdio de arquitetura especializado em projetos modernos, sustentáveis e personalizados.">
+  <meta name="theme-color" content="#5B6236" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8092/8092343.png" />
+  
+  <!-- Tipografia -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assests/css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- Header Sticky -->
+  <header class="header" id="header">
+    <nav class="nav container" role="navigation" aria-label="Menu principal">
+      <div class="nav__logo">
+        <h2>PROJETIVA</h2>
+      </div>
+
+      <div class="nav__menu" id="nav-menu" aria-expanded="false">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active-link">Início</a></li>
+          <li><a href="#about" class="nav__link">Sobre</a></li>
+          <li><a href="#portfolio" class="nav__link">Portfólio</a></li>
+          <li><a href="#gallery" class="nav__link">Galeria</a></li>
+          <li><a href="#contact" class="nav__link">Contato</a></li>
+        </ul>
+
+        <div class="nav__close" id="nav-close" aria-label="Fechar menu" role="button" tabindex="0">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" role="button" tabindex="0">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Image Section -->
+  <section class="hero-image-section"></section>
+
+  <!-- Hero / Início -->
+  <section class="home section" id="home">
+    <div class="home__container container">
+      <div class="home__content">
+        <h1 class="home__title">
+          Transformamos <span>Sonhos</span><br /> em <span>Realidade</span>
+        </h1>
+        <p class="home__description">
+          Projetos arquitetônicos únicos, alinhados à funcionalidade e estética moderna. Descubra o que podemos criar para você.
+        </p>
+        <a href="#portfolio" class="button home__button">
+          Conheça Nosso Portfólio <i class="fas fa-arrow-right button__icon"></i>
+        </a>
+      </div>
+
+      <div class="home__images">
+        <div class="home__img">
+          <img src="https://plus.unsplash.com/premium_photo-1682377521625-c656fc1ff3e1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fachada de projeto moderno" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+    <div class="home__scroll">
+      <a href="#about" class="home__scroll-button">
+        <i class="fas fa-mouse"></i>
+        <span class="home__scroll-name">Scroll Down</span>
+        <i class="fas fa-arrow-down home__scroll-arrow"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="about section" id="about">
+    <div class="about__container container grid">
+      <div class="about__data">
+        <h2 class="section__title about__title">Sobre <span>a Projetiva</span></h2>
+
+        <div class="about__info">
+          <div class="about__box">
+            <p class="about__description">
+                                Desde 2010, projetamos espaços que inspiram e acolhem. Com inovação e cuidado, construímos o futuro da arquitetura contemporânea.
+                            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__img">
+        <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=80" alt="Equipe de arquitetos" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section class="portfolio section" id="portfolio">
+    <h2 class="section__title">Nosso <span>Portfólio</span></h2>
+
+    <div class="portfolio__container container grid portfolio__content">
+      <!-- Card 1 -->
+      <div class="portfolio__item" data-project="residencia-moderna-2023">
+        <img src="https://plus.unsplash.com/premium_photo-1682377521625-c656fc1ff3e1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Residência Moderna" class="portfolio__img" loading="lazy">
+        <div class="portfolio__overlay">
+          <div class="portfolio__info">
+            <h3 class="portfolio__title">Residência Moderna</h3>
+            <p class="portfolio__category">2023 • Residencial</p>
+            <button class="portfolio__button"><i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="portfolio__item" data-project="casa-minimalista-2023">
+        <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Casa Minimalista" class="portfolio__img" loading="lazy">
+        <div class="portfolio__overlay">
+          <div class="portfolio__info">
+            <h3 class="portfolio__title">Casa Minimalista</h3>
+            <p class="portfolio__category">2023 • Residencial</p>
+            <button class="portfolio__button"><i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="portfolio__item" data-project="projeto-sustentavel-2022">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Projeto Sustentável" class="portfolio__img" loading="lazy">
+        <div class="portfolio__overlay">
+          <div class="portfolio__info">
+            <h3 class="portfolio__title">Projeto Sustentável</h3>
+            <p class="portfolio__category">2022 • Residencial</p>
+            <button class="portfolio__button"><i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section class="gallery section" id="gallery">
+    <h2 class="section__title">Galeria de <span>Fotos</span></h2>
+
+    <div class="gallery__container container">
+      <div class="gallery__content grid">
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Detalhe em concreto e madeira" class="gallery__img" loading="lazy" />
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Ambiente interno iluminado" class="gallery__img" loading="lazy" />
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Espaço com jardim" class="gallery__img" loading="lazy" />
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Interiores minimalistas" class="gallery__img" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact section" id="contact">
+    <h2 class="section__title">Entre em <span>Contato</span></h2>
+
+    <div class="contact__container container grid">
+      <div class="contact__content">
+        <div class="contact__info">
+          <div class="contact__card">
+            <i class="fas fa-phone contact__card-icon"></i>
+            <h3 class="contact__card-title">Telefone</h3>
+            <span class="contact__card-data">(11) 99999-9999</span>
+          </div>
+          <div class="contact__card">
+            <i class="fas fa-envelope contact__card-icon"></i>
+            <h3 class="contact__card-title">Email</h3>
+            <span class="contact__card-data">contato@projetiva.com.br</span>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contact-form">
+          <div class="contact__form-div">
+            <label class="contact__form-tag">Nome</label>
+            <input type="text" name="user_name" required placeholder="Seu nome completo" class="contact__form-input" />
+          </div>
+          <div class="contact__form-div">
+            <label class="contact__form-tag">Email</label>
+            <input type="email" name="user_email" required placeholder="seu@email.com" class="contact__form-input" />
+          </div>
+          <div class="contact__form-div contact__form-area">
+            <label class="contact__form-tag">Mensagem</label>
+            <textarea name="message" required placeholder="Conte-nos sobre seu projeto..." class="contact__form-input"></textarea>
+          </div>
+          <button type="submit" class="button contact__button">
+            Enviar Mensagem <i class="fas fa-paper-plane button__icon"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="contact__map">
+        <iframe src="https://www.google.com/maps?q=Av+Paulista,+1000&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <div class="footer__content">
+        <h3 class="footer__title">Projetiva<span>.</span></h3>
+        <p class="footer__description">Arquitetura com propósito, estética e inovação.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <p>&copy; 2025 Projetiva. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Up -->
+  <a href="#" class="scrollup" id="scroll-up">
+      <i class="fas fa-angle-up scrollup__icon"></i>
+  </a>
+
+  <!-- Modal for Portfolio -->
+  <div class="modal" id="portfolio-modal">
+      <div class="modal__content">
+          <span class="modal__close">&times;</span>
+          <img src="" alt="" class="modal__img" id="modal-img">
+          <div class="modal__info">
+              <h3 class="modal__title" id="modal-title"></h3>
+              <p class="modal__description" id="modal-description"></p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assests/js/main.js"></script>
+</body>
+</html>
